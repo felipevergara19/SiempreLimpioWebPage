@@ -7,16 +7,16 @@ import "react-awesome-slider/dist/styles.css";
 
 const Slide = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <AwesomeSlider>
-        <div>
-          <img src={Image1} alt="Slide 1" />
+    <div className="flex items-center justify-center h-screen overflow-hidden mt-[-100px]">
+      <AwesomeSlider className="w-3/6 h-2/4">
+        <div className="relative">
+          <img src={Image1} alt="Slide 1" className="w-full h-full object-cover" />
         </div>
         <div>
-          <img src={Image2} alt="Slide 2" />
+          <img src={Image2} alt="Slide 2" className="w-full  h-full object-cover" />
         </div>
         <div>
-          <img src={Image3} alt="Slide 3" />
+          <img src={Image3} alt="Slide 3" className="w-full  h-full object-cover" />
         </div>
       </AwesomeSlider>
     </div>

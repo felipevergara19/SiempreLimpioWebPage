@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
 import Slide from "./components/Slide"
-// import About from "./components/About.js";
-// import Services from "./components/Services";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
+import About from "./components/About.js";
+import Services from "./components/Services";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -12,10 +11,9 @@ function App() {
     <div>
       <Header /> 
       <Slide />
-      {/* <About />
       <Services />
-      <Contact />
-      <Footer /> */}
+      <About />
+      <Footer />
     </div>
   );
 }
