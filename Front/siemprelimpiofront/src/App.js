@@ -10,7 +10,6 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>Siempre Limpio</h1>
       <Header /> 
       <Slide />
       {/* <About />
