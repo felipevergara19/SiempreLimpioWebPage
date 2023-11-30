@@ -8,6 +8,7 @@ const Header = () => {
           <li><a href="#about" className="hover:text-gray-300">About</a></li>
           <li><a href="#services" className="hover:text-gray-300">Services</a></li>
           <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
+          <li><a href="#footer" className="hover:text-gray-300">Footer</a></li>
         </ul>
       </nav>
     </header>
