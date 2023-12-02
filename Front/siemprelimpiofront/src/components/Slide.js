@@ -6,18 +6,24 @@ import Image3 from "../Images/Imagen3.jpg";
 import "react-awesome-slider/dist/styles.css";
 
 const Slide = () => {
+  const slideData = [
+    { id: 1, image: Image1, title: "Slide 1" },
+    { id: 2, image: Image2, title: "Slide 2" },
+    { id: 3, image: Image3, title: "Slide 3" },
+  ];
+
   return (
     <div className="flex items-center justify-center h-screen overflow-hidden mt-[-100px]">
       <AwesomeSlider className="w-3/6 h-2/4 z-0">
-        <div className="relative">
-          <img src={Image1} alt="Slide 1" className="w-full h-full object-cover" />
-        </div>
-        <div>
-          <img src={Image2} alt="Slide 2" className="w-full  h-full object-cover" />
-        </div>
-        <div>
-          <img src={Image3} alt="Slide 3" className="w-full  h-full object-cover" />
-        </div>
+        {slideData.map((imagen) => (
+          <div className="relative">
+            <img
+              src={imagen.image}
+              alt={imagen.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </AwesomeSlider>
     </div>
   );
