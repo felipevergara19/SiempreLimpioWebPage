@@ -6,6 +6,8 @@ import Services from "./components/Services";
 import Works from "./components/Works.js";
 import RegistrationForm from "./components/Registration.js";
 import Footer from "./components/Footer";
+import MyCalendar from "./components/Calendar.js"
+
 import "./App.css";
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
       <About />
       <Works />
       <Footer />
+      <MyCalendar />
       
       {isRegistrationOpen && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
