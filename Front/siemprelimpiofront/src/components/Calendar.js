@@ -6,10 +6,11 @@ import 'react-calendar/dist/Calendar.css';
 const MyCalendar = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const availableHours = ['10:00 AM', '2:00 PM', '4:00 PM']; // Reemplaza esto con tus horas disponibles
-
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
+  
+
 
   return (
     <div>
@@ -20,6 +21,7 @@ const MyCalendar = () => {
           <li key={hour}>{hour}</li>
         ))}
       </ul>
+      
     </div>
   );
 };
